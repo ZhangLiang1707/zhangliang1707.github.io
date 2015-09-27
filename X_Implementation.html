@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Demo Site</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-family: "Open Sans" sans-serif;
+    }
+
+    header {
+      background-color: black;
+      padding-top: 20px;
+      background: url(./background.png) no-repeat;
+      background-size: cover;
+      background-position: 30%;
+    }
+
+    .bookcover {
+      display: block;
+      margin: 0 auto;
+      width: 30%;
+      max-width: 200px;
+    }
+
+    .booklist {
+      margin: 0;
+      padding: 0 20px 20px 20px;
+      text-align: center;
+    }
+
+    .booklist li {
+      display: inline-block;
+      padding-top: 20px;
+    }
+
+    .booklist li:nth-child(2) {
+      margin: 0 15px;
+    }
+
+    button {
+      color: rgba(255, 255, 255, .85);
+      min-width: 50px;
+      border: 1px solid rgba(255, 255, 255, .85);
+      font-weight: 300;
+      background: none;
+      padding: 5px 10px;
+      border-radius: 3px;
+    }
+
+    artical {
+      display: block;
+      width: 60%;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+
+    h1 {
+      font-weight: 400;
+      margin: 15px 0 0;
+    }
+
+    h3 {
+      margin: 0;
+      font-weight: 300;
+      color: #D8D8D8;
+    }
+
+    p {
+      text-align: left;
+      font-weight: 300;
+      line-height: 20px;
+      color: #808080;
+      font-size: 13px;
+    }
+
+    artical footer {
+      display: block;
+      border-top: 1px solid #F5F5F5;
+      border-bottom: 1px solid #F5F5F5;
+      padding: 5px 0;
+      color: #CCCCCC;
+      font-size: 13px;
+      font-weight: 300;
+    }
+
+    .word-count {
+      float: left;
+    }
+
+    .fa-star {
+      color: #F5C00C;
+      margin-right: 3px;
+    }
+
+    .social {
+      float: right;
+    }
+
+    .fa-twitter-square {
+      color: #469BFC;
+      font-size: 18px;
+    }
+
+    .fa-facebook-square {
+      color: #3B5A96;
+      font-size: 18px;
+    }
+
+    .fa-google-plus-square {
+      color: #D0493B;
+      font-size: 18px;
+    }
+
+    footer {
+      padding: 30px 0 20px;
+    }
+
+    footer p {
+      color: #E8E8E8;
+      font-size: 13px;
+      text-align: center;
+      margin: 0;
+    }
+
+    .fa-book {
+      color: #e8e8e8;
+      font-size: 21px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="./bookcover.png" alt="Book Cover" class="bookcover">
+    <ul class="booklist">
+      <li>
+        <button><i class="fa fa-share"></i> Send to my Kindle</button>
+      </li>
+      <li>
+        <button><i class="fa fa-sticky-note"></i> Download ePub</button>
+      </li>
+      <li>
+        <button><i class="fa fa-share"></i> Google Play Books</button>
+      </li>
+    </ul>
+  </header>
+  <artical>
+    <h1>The Artists</h1>
+    <h3>John Doe</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate doloribus nemo repudiandae deserunt eum dolore quibusdam libero inventore, veritatis minima et, consectetur, enim nulla debitis accusamus fuga sapiente sed incidunt.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum inventore a natus dolores soluta in doloribus explicabo eos, odit neque?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dolores molestias recusandae aliquid soluta saepe sint, voluptas. Perferendis vero veritatis atque numquam, odio, voluptatem corrupti.
+    </p>
+    <footer>
+      <span class="word-count"><i class="fa fa-info-circle"></i> 954 works</span>
+      <span class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>(88)</span>
+      <span class="social"><i class="fa fa-facebook-square"></i>
+        <i class="fa fa-twitter-square"></i>
+        <i class="fa fa-google-plus-square"></i>
+      </span>
+    </footer>
+  </artical>
+  <footer>
+    <i class="fa fa-book"></i>
+    <p>
+      Published for free with Liberio
+    </p>
+    <p>
+      Make ebooks. Really simple.
+    </p>
+  </footer>
+</body>
+
+</html>
